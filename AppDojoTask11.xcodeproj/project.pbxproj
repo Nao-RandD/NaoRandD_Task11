@@ -13,6 +13,8 @@
 		9F6246CD262F8E99003B0195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6246CB262F8E99003B0195 /* Main.storyboard */; };
 		9F6246CF262F8E9B003B0195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6246CE262F8E9B003B0195 /* Assets.xcassets */; };
 		9F6246D2262F8E9B003B0195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6246D0262F8E9B003B0195 /* LaunchScreen.storyboard */; };
+		9F6246EE26344613003B0195 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6246ED26344613003B0195 /* CustomCell.swift */; };
+		9F6246F126352AA7003B0195 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6246F026352AA7003B0195 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9F6246CE262F8E9B003B0195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6246D1262F8E9B003B0195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6246D3262F8E9B003B0195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6246ED26344613003B0195 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9F6246F026352AA7003B0195 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9F6246CE262F8E9B003B0195 /* Assets.xcassets */,
 				9F6246D0262F8E9B003B0195 /* LaunchScreen.storyboard */,
 				9F6246D3262F8E9B003B0195 /* Info.plist */,
+				9F6246ED26344613003B0195 /* CustomCell.swift */,
+				9F6246F026352AA7003B0195 /* ListViewController.swift */,
 			);
 			path = AppDojoTask11;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				9F6246CA262F8E99003B0195 /* ViewController.swift in Sources */,
 				9F6246C6262F8E99003B0195 /* AppDelegate.swift in Sources */,
+				9F6246EE26344613003B0195 /* CustomCell.swift in Sources */,
+				9F6246F126352AA7003B0195 /* ListViewController.swift in Sources */,
 				9F6246C8262F8E99003B0195 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
