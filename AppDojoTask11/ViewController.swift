@@ -9,16 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet private weak var label: UILabel!
 
     @IBAction private func exit(segue: UIStoryboardSegue) {
         let listViewController = segue.source as? ListViewController
         label.text = listViewController?.prefectuer
+    }
+
+    @IBAction private func Cancel(segue: UIStoryboardSegue) {
+
     }
 }
 

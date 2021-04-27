@@ -81,7 +81,18 @@
                         <viewLayoutGuide key="safeArea" id="xpz-5u-sbS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6id-q5-VlR"/>
+                    <navigationItem key="navigationItem" id="6id-q5-VlR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="J5w-ce-TOT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="A2Z-Gj-1LW">
+                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="eL4-I1-YiZ" kind="unwind" unwindAction="CancelWithSegue:" id="QaB-3g-iG0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="eL4-I1-YiZ" kind="unwind" identifier="exit" unwindAction="exitWithSegue:" id="ycy-gX-Ly1"/>
                     </connections>

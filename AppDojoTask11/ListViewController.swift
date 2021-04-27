@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-
 import UIKit
 
 class ListViewController: UIViewController {
@@ -22,8 +20,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // タップされたセルの行番号を出力
-        print("\(indexPath.row)番目の行が選択されました。")
         prefectuer = prefectureData[indexPath.row]
         performSegue(withIdentifier: "exit", sender: nil)
     }
