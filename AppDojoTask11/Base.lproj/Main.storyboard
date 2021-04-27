@@ -16,23 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="都道府県" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxc-3V-ha5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxc-3V-ha5">
                                 <rect key="frame" x="72" y="122" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="未選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n79-o1-ZfA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n79-o1-ZfA">
                                 <rect key="frame" x="186" y="122" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYg-nR-XJW">
-                                <rect key="frame" x="263" y="116" width="131" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYg-nR-XJW">
+                                <rect key="frame" x="263" y="117.5" width="121" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="bKb-nU-Yzb"/>
+                                </constraints>
                                 <state key="normal" title="変更"/>
                                 <connections>
                                     <segue destination="tQX-v1-MrB" kind="presentation" id="IQ9-95-h3O"/>
@@ -41,6 +41,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n79-o1-ZfA" firstAttribute="leading" secondItem="Cxc-3V-ha5" secondAttribute="trailing" constant="44" id="AQN-9i-ONU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LYg-nR-XJW" secondAttribute="trailing" constant="30" id="J0x-5U-j1Z"/>
+                            <constraint firstItem="LYg-nR-XJW" firstAttribute="leading" secondItem="n79-o1-ZfA" secondAttribute="trailing" constant="25" id="QBn-aX-gz0"/>
+                            <constraint firstItem="n79-o1-ZfA" firstAttribute="centerY" secondItem="Cxc-3V-ha5" secondAttribute="centerY" id="YdF-Ri-7L4"/>
+                            <constraint firstItem="Cxc-3V-ha5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="evf-rk-YPK"/>
+                            <constraint firstItem="LYg-nR-XJW" firstAttribute="centerY" secondItem="Cxc-3V-ha5" secondAttribute="centerY" id="gJ8-fO-HuI"/>
+                            <constraint firstItem="Cxc-3V-ha5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="pn9-Kl-u2L"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="n79-o1-ZfA" id="6ic-jU-V91"/>
@@ -50,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--List View Controller-->
+        <!--都道府県-->
         <scene sceneID="9yp-Io-50c">
             <objects>
                 <viewController id="L5l-Xq-szE" customClass="ListViewController" customModule="AppDojoTask11" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xTr-4p-4IG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes"  separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xTr-4p-4IG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,11 +90,12 @@
                         <viewLayoutGuide key="safeArea" id="xpz-5u-sbS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6id-q5-VlR">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="J5w-ce-TOT">
+                    <navigationItem key="navigationItem" title="都道府県" id="6id-q5-VlR" userLabel="都道府県">
+                        <barButtonItem key="rightBarButtonItem" id="J5w-ce-TOT">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="A2Z-Gj-1LW">
                                 <rect key="frame" x="302" y="13" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <segue destination="eL4-I1-YiZ" kind="unwind" unwindAction="CancelWithSegue:" id="QaB-3g-iG0"/>
