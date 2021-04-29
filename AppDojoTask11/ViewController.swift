@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     @IBAction private func exit(segue: UIStoryboardSegue) {
         let listViewController = segue.source as? ListViewController
-        label.text = listViewController?.prefectuer
+        label.text = listViewController?.prefectureName
     }
 
     @IBAction private func Cancel(segue: UIStoryboardSegue) {
